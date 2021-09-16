@@ -1,0 +1,10 @@
+<conversion>
+  <applied-converters>
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <f p="./.idea\workspace.xml" t="1626505489" />
+    <f p="./.idea\intellij-platform-plugin-template-main.iml" t="1626011211" />
+    <f p="./.idea\modules.xml" t="1626011211" />
+  </project-files>
+</conversion>

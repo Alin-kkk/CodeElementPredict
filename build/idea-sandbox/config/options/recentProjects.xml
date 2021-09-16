@@ -1,0 +1,68 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Desktop/test/PluginDemo">
+          <value>
+            <RecentProjectMetaInfo frameTitle="PluginDemo – ActionDemo.java [PluginDemo.main]" projectWorkspaceId="1vG4IwuL9qSaKol04FLmmgNxLze">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7628.21" />
+              <option name="buildTimestamp" value="1625054661918" />
+              <frame x="80" y="80" width="1256" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1626182106221" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/test/intellij-platform-plugin-template-main">
+          <value>
+            <RecentProjectMetaInfo frameTitle="intellij-platform-plugin-template-main – MyProjectManagerListener.kt" projectWorkspaceId="1vAiEoNffYAs4dmlYOlmisfQ7bu">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7628.21" />
+              <option name="buildTimestamp" value="1625054663867" />
+              <frame x="0" y="56" width="1256" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1626504965670" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/test/CodeElementPredict1.0">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CodeElementPredict – InterestCodeElementsImpl.java [CodeElementPredict.main]" projectWorkspaceId="1vGGrgOjyMgj5Z6QUROq8H1Waxt">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7628.21" />
+              <option name="buildTimestamp" value="1625054657265" />
+              <frame x="0" y="56" width="1202" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1626505489967" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/test/CodeElementPredict1.1">
+          <value>
+            <RecentProjectMetaInfo frameTitle="CodeElementPredict – InterestCodeElementsImpl.java [CodeElementPredict.main]" projectWorkspaceId="1vGGrgOjyMgj5Z6QUROq8H1Waxt">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7628.21" />
+              <option name="buildTimestamp" value="1625054690757" />
+              <frame x="213" y="146" width="1038" height="1000" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1626506101782" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/test/intellij-sdk-code-samples-main">
+          <value>
+            <RecentProjectMetaInfo frameTitle="intellij-sdk-code-samples-main – ProjectCountingService.java" opened="true" projectWorkspaceId="1vbcFqtKc9EHIYneGKAmP9yHCPa">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-211.7628.21" />
+              <option name="buildTimestamp" value="1625054645226" />
+              <frame x="560" y="5" width="1355" height="1030" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1626834127883" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

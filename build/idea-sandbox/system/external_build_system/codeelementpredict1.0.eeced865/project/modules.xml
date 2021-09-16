@@ -1,0 +1,9 @@
+<project>
+  <component name="ExternalProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeElementPredict.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeElementPredict.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeElementPredict.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeElementPredict.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeElementPredict.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeElementPredict.test.iml" />
+    </modules>
+  </component>
+</project>

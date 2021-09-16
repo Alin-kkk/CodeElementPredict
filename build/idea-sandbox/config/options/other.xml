@@ -1,0 +1,76 @@
+<application>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="JetBrains Runtime 11.0.11" />
+        <option name="installDir" value="C:\Users\林余航\.jdks\jbr-11.0.11" />
+        <option name="javaHomeDir" value="C:\Users\林余航\.jdks\jbr-11.0.11" />
+        <option name="sha256" value="1337fdc233a1658dd3bd6001d710bf7e87ef178424bb581449a4ab85e8465a34" />
+        <option name="url" value="https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_11-windows-x64-b1542.1.tar.gz" />
+        <option name="versionText" value="11.0.11" />
+      </installed-jdk>
+    </option>
+  </component>
+  <component name="ProjectPluginTrackerManager">
+    <trackers>
+      <map>
+        <entry key="1vAiEoNffYAs4dmlYOlmisfQ7bu">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1vG4IwuL9qSaKol04FLmmgNxLze">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1vGGrgOjyMgj5Z6QUROq8H1Waxt">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1vbcFqtKc9EHIYneGKAmP9yHCPa">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="build.toolwindow.run.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="defaultJdkConfigured" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/test/intellij-sdk-code-samples-main&#10;C:/Users/林余航/Desktop/test/CodeElementPredict1.1&#10;C:/Users/林余航/Desktop/test/CodeElementPredict1.0&#10;C:/Users/林余航/Desktop/test/intellij-platform-plugin-template-main&#10;C:/Users/林余航/Desktop/test/PluginDemo" />
+    <property name="file.gist.reindex.count" value="40" />
+    <property name="fileTypeChangedCounter" value="4" />
+    <property name="fileTypeDetectors" value="com.android.tools.idea.fileTypes.profiler.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector" />
+    <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.updates.previous.build.number" value="IC-211.7628.21" />
+    <property name="ide.updates.whats.new.shown.for" value="211" />
+    <property name="installed.kotlin.plugin.version" value="211-1.4.32-release-IJ7628.19" />
+    <property name="kotlin-gradle-user-dirs" value="C:\Users\林余航\.gradle" />
+    <property name="kotlin.plugin.releaseDate" value="211-1.4.32-release-IJ7628.19:2021-06-28" />
+    <property name="lastSeenTip" value="neue-CompleteStatement.html" />
+    <property name="lastTimeTipsWereShown" value="1631754391098" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/test/PluginDemo" />
+    <property name="log.trace.categories" value="#com.jetbrains.rdserver.requests&#10;#com.jetbrains.rd.ide.document&#10;#com.jetbrains.rdserver.document&#10;#com.jetbrains.rdserver.editors&#10;#com.jetbrains.rdserver.actions" />
+    <property name="new.jvm.backend.notification" value="true" />
+    <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
+    <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
+    <property name="packagesearch.status.updated.ts" value="1631522405276" />
+    <property name="seenTips" value="neue-SecondSmartCompletionArrayMember.html,Kotlin.html,neue-SecondBasicClassNameCompletion.html,neue-QuickSwitchScheme.html,neue-MultiselectionWords.html,neue-DragToOpen.html,neue-FixDocComment.html,neue-NavigateBetweenErrors.html,neue-EnterDirectoryInGotoFile.html,neue-RunTests.html,neue-ImagesLookup.html,neue-CheckRegExp.html,neue-CamelHumpsInCodeCompletion.html,neue-HighlightUsagesInFile.html,neue-SelectIn.html,Kotlin_Java_convert.html,neue-FindInPath.html,neue-CommentCode.html,neue-FinishBySmartEnter.html,neue-ExternalJavaDoc.html,neue-SecondSmartCompletionToar.html,neue-TabInLookups.html,neue-NextPrevError.html,InjectSQLLanguage.html,neue-Rename.html,neue-Scratch.html,neue-JoinLines.html,neue-CloseOthers.html,neue-AnnotationsAndDiffs.html,neue-CompleteStatement.html" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+  </component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="PluginDemo-history" project-path="$USER_HOME$/Desktop/test/PluginDemo" last-access-time="1626504516563" />
+      <command-history-file filename="intellij-sdk-code-samples-main-history" project-path="$USER_HOME$/Desktop/test/intellij-sdk-code-samples-main" last-access-time="1630045638223" />
+    </command-history-files>
+  </component>
+  <component name="ToolbarSettingsService">
+    <option name="NEW_TOOLBAR_SETTINGS" value="OLD_NAVBAR" />
+  </component>
+</application>

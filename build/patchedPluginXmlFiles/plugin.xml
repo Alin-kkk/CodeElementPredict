@@ -1,0 +1,28 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="211.7628" until-build="211.*" />
+  <id>org.example.CodeElementPredict</id>
+  <name>CodeElementPredict</name>
+  <vendor email="1873216794@qq.com" url="http://www.bilibili.com">ZJU</vendor>
+  <description>通过选定代码初始元素，经过与代码上下文预测模型的匹配，最终推荐可能需要的代码元素</description>
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+  <depends>com.intellij.modules.lang</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <!--        <toolWindow secondary="true" anchor="left"-->
+    <!--                    id="CodePredict" icon="AllIcons.Toolwindows.ToolWindowStructure"-->
+    <!--                    factoryClass="com.gradle.demo.windows.ToolFactoryComputeFactory">-->
+    <!--        </toolWindow>-->
+  </extensions>
+  <actions>
+    <!-- Add your actions here -->
+    <action id="Entry" class="com.gradle.demo.action.Entry" text="CodeElementPredict">
+      <add-to-group group-id="HelpMenu" anchor="first" />
+    </action>
+    <!--        <action id="ViewDtructure" class="com.gradle.demo.action.ViewStructureAction" text="ViewStructure">-->
+    <!--            <add-to-group group-id="HelpMenu" anchor="first"/>-->
+    <!--        </action>-->
+  </actions>
+</idea-plugin>

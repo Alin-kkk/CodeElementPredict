@@ -1,0 +1,10 @@
+com/gradle/demo/windows/InterestCodeElementsImpl.java
+ com.gradle.demo.windows.InterestCodeElementsImpl
+ com.gradle.demo.windows.InterestCodeElementsImpl$1
+ com.gradle.demo.windows.InterestCodeElementsImpl$2
+com/gradle/demo/action/Entry.java
+ com.gradle.demo.action.Entry
+com/gradle/demo/StructureViewWrapperImpl.java
+ com.gradle.demo.StructureViewWrapperImpl
+ com.gradle.demo.StructureViewWrapperImpl$1
+ com.gradle.demo.StructureViewWrapperImpl$ContentPanel

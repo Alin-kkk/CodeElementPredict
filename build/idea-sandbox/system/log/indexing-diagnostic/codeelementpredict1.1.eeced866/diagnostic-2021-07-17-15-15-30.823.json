@@ -1,0 +1,868 @@
+{
+  "appInfo" : {
+    "build" : "211.7628.21",
+    "buildDate" : "2021-06-30T12:04:50.757Z[UTC]",
+    "productCode" : "IC",
+    "generated" : "2021-07-17T07:15:30.8249009Z",
+    "os" : "Windows 10 10.0",
+    "runtime" : "JetBrains s.r.o. 11.0.11 11.0.11+9-b1341.60"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 536870912,
+    "numberOfProcessors" : 8,
+    "maxNumberOfIndexingThreads" : 4,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "projectIndexingHistory" : {
+    "projectName" : "CodeElementPredict",
+    "times" : {
+      "totalUpdatingTime" : 5247267000,
+      "indexingTime" : 3488676000,
+      "contentLoadingTime" : 338457284,
+      "scanFilesTime" : 1735364700,
+      "pushPropertiesTime" : 7978400,
+      "indexExtensionsTime" : 0,
+      "updatingStart" : "2021-07-17T07:15:25.5749306Z",
+      "updatingEnd" : "2021-07-17T07:15:30.8219079Z",
+      "totalSuspendedTime" : 0,
+      "wasInterrupted" : false
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 19,
+      "numberOfScannedFiles" : 216034,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 3508,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringIndexingStage" : 1,
+      "numberOfFilesIndexedWithLoadingContent" : 3508
+    },
+    "totalStatsPerFileType" : [ {
+      "fileType" : "CLASS",
+      "partOfTotalProcessingTime" : {
+        "part" : 12309055000,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1178189700,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 3475,
+      "totalFilesSize" : 9097639,
+      "indexingSpeed" : {
+        "totalBytes" : 9097639,
+        "totalTime" : 12309055000
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 3475,
+        "totalFilesSize" : 9097639,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 12309055000,
+          "total" : 12309055000
+        }
+      } ]
+    }, {
+      "fileType" : "Properties",
+      "partOfTotalProcessingTime" : {
+        "part" : 688525800,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 113806700,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 11,
+      "totalFilesSize" : 116442,
+      "indexingSpeed" : {
+        "totalBytes" : 116442,
+        "totalTime" : 688525800
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 10,
+        "totalFilesSize" : 116242,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 685723100,
+          "total" : 688525800
+        }
+      }, {
+        "providerName" : "Module 'CodeElementPredict'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 200,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 2802700,
+          "total" : 688525800
+        }
+      } ]
+    }, {
+      "fileType" : "XML",
+      "partOfTotalProcessingTime" : {
+        "part" : 232666200,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 655300,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 907,
+      "indexingSpeed" : {
+        "totalBytes" : 907,
+        "totalTime" : 232666200
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CodeElementPredict.main'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 907,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 232666200,
+          "total" : 232666200
+        }
+      } ]
+    }, {
+      "fileType" : "JAVA",
+      "partOfTotalProcessingTime" : {
+        "part" : 62010200,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 5269000,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 2740,
+      "indexingSpeed" : {
+        "totalBytes" : 2740,
+        "totalTime" : 62010200
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CodeElementPredict.main'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2740,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 62010200,
+          "total" : 62010200
+        }
+      } ]
+    }, {
+      "fileType" : "Groovy",
+      "partOfTotalProcessingTime" : {
+        "part" : 60841700,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 583200,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 627,
+      "indexingSpeed" : {
+        "totalBytes" : 627,
+        "totalTime" : 60841700
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CodeElementPredict'",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 627,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 60841700,
+          "total" : 60841700
+        }
+      } ]
+    }, {
+      "fileType" : "kotlin_module",
+      "partOfTotalProcessingTime" : {
+        "part" : 47203500,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 156400,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 3246,
+      "indexingSpeed" : {
+        "totalBytes" : 3246,
+        "totalTime" : 47203500
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 3246,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 47203500,
+          "total" : 47203500
+        }
+      } ]
+    }, {
+      "fileType" : "textmate",
+      "partOfTotalProcessingTime" : {
+        "part" : 26882800,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 4829400,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 2763,
+      "indexingSpeed" : {
+        "totalBytes" : 2763,
+        "totalTime" : 26882800
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CodeElementPredict'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2763,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 26882800,
+          "total" : 26882800
+        }
+      } ]
+    }, {
+      "fileType" : "JavaScript",
+      "partOfTotalProcessingTime" : {
+        "part" : 25269800,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 596000,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 5252,
+      "indexingSpeed" : {
+        "totalBytes" : 5252,
+        "totalTime" : 25269800
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 5252,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 25269800,
+          "total" : 25269800
+        }
+      } ]
+    }, {
+      "fileType" : "GUI_DESIGNER_FORM",
+      "partOfTotalProcessingTime" : {
+        "part" : 21304100,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 1389900,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 2317,
+      "indexingSpeed" : {
+        "totalBytes" : 2317,
+        "totalTime" : 21304100
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CodeElementPredict.main'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 2317,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 21304100,
+          "total" : 21304100
+        }
+      } ]
+    }, {
+      "fileType" : "Manifest",
+      "partOfTotalProcessingTime" : {
+        "part" : 13719400,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 3107400,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : 336,
+      "indexingSpeed" : {
+        "totalBytes" : 336,
+        "totalTime" : 13719400
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 336,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 13719400,
+          "total" : 13719400
+        }
+      } ]
+    }, {
+      "fileType" : "PLAIN_TEXT",
+      "partOfTotalProcessingTime" : {
+        "part" : 13230300,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 904500,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 6169,
+      "indexingSpeed" : {
+        "totalBytes" : 6169,
+        "totalTime" : 13230300
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 6169,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 13230300,
+          "total" : 13230300
+        }
+      } ]
+    }, {
+      "fileType" : "SPI",
+      "partOfTotalProcessingTime" : {
+        "part" : 9140300,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 2370300,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 4,
+      "totalFilesSize" : 935,
+      "indexingSpeed" : {
+        "totalBytes" : 935,
+        "totalTime" : 9140300
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 4,
+        "totalFilesSize" : 935,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 9140300,
+          "total" : 9140300
+        }
+      } ]
+    }, {
+      "fileType" : "CSS",
+      "partOfTotalProcessingTime" : {
+        "part" : 8859000,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 601500,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 2,
+      "totalFilesSize" : 2695,
+      "indexingSpeed" : {
+        "totalBytes" : 2695,
+        "totalTime" : 8859000
+      },
+      "biggestContributors" : [ {
+        "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+        "numberOfFiles" : 2,
+        "totalFilesSize" : 2695,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 8859000,
+          "total" : 8859000
+        }
+      } ]
+    }, {
+      "fileType" : "Shell Script",
+      "partOfTotalProcessingTime" : {
+        "part" : 5804200,
+        "total" : 13524512300
+      },
+      "partOfTotalContentLoadingTime" : {
+        "part" : 393300,
+        "total" : 1312852600
+      },
+      "totalNumberOfFiles" : 1,
+      "totalFilesSize" : 5766,
+      "indexingSpeed" : {
+        "totalBytes" : 5766,
+        "totalTime" : 5804200
+      },
+      "biggestContributors" : [ {
+        "providerName" : "Module 'CodeElementPredict'",
+        "numberOfFiles" : 1,
+        "totalFilesSize" : 5766,
+        "partOfTotalProcessingTimeOfThisFileType" : {
+          "part" : 5804200,
+          "total" : 5804200
+        }
+      } ]
+    } ],
+    "totalStatsPerIndexer" : [ {
+      "indexId" : "Stubs",
+      "partOfTotalIndexingTime" : {
+        "part" : 4905837700,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 3490,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 9217064,
+      "indexingSpeed" : {
+        "totalBytes" : 9217064,
+        "totalTime" : 4905837700
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinClassFileIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 689356100,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 3474,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 9096348,
+      "indexingSpeed" : {
+        "totalBytes" : 9096348,
+        "totalTime" : 689356100
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "bytecodeAnalysis",
+      "partOfTotalIndexingTime" : {
+        "part" : 624160900,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 3472,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 9091411,
+      "indexingSpeed" : {
+        "totalBytes" : 9091411,
+        "totalTime" : 624160900
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "IdIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 223616600,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 31,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 146042,
+      "indexingSpeed" : {
+        "totalBytes" : 146042,
+        "totalTime" : 223616600
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJvmMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 134073000,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 3474,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 9096348,
+      "indexingSpeed" : {
+        "totalBytes" : 9096348,
+        "totalTime" : 134073000
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "Trigram.Index",
+      "partOfTotalIndexingTime" : {
+        "part" : 57059500,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 31,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 146042,
+      "indexingSpeed" : {
+        "totalBytes" : 146042,
+        "totalTime" : 57059500
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinModuleMappingIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 38848900,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3246,
+      "indexingSpeed" : {
+        "totalBytes" : 3246,
+        "totalTime" : 38848900
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.binary.plus.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 12022900,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2740,
+      "indexingSpeed" : {
+        "totalBytes" : 2740,
+        "totalTime" : 12022900
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "TodoIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 11513100,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 7,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 12096,
+      "indexingSpeed" : {
+        "totalBytes" : 12096,
+        "totalTime" : 11513100
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.fun.expression",
+      "partOfTotalIndexingTime" : {
+        "part" : 8073300,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2740,
+      "indexingSpeed" : {
+        "totalBytes" : 2740,
+        "totalTime" : 8073300
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.versions.KotlinJsMetadataVersionIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 7651100,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 5252,
+      "indexingSpeed" : {
+        "totalBytes" : 5252,
+        "totalTime" : 7651100
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "com.intellij.uiDesigner.FormClassIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 6730200,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2317,
+      "indexingSpeed" : {
+        "totalBytes" : 2317,
+        "totalTime" : 6730200
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "java.null.method.argument",
+      "partOfTotalIndexingTime" : {
+        "part" : 2787900,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 2,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 2740,
+      "indexingSpeed" : {
+        "totalBytes" : 2740,
+        "totalTime" : 2787900
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    }, {
+      "indexId" : "org.jetbrains.kotlin.idea.vfilefinder.KotlinJvmModuleAnnotationsIndex",
+      "partOfTotalIndexingTime" : {
+        "part" : 1405600,
+        "total" : 6723136800
+      },
+      "totalNumberOfFiles" : 1,
+      "totalNumberOfFilesIndexedByExtensions" : 0,
+      "totalFilesSize" : 3246,
+      "indexingSpeed" : {
+        "totalBytes" : 3246,
+        "totalTime" : 1405600
+      },
+      "snapshotInputMappingStats" : {
+        "totalRequests" : 0,
+        "totalMisses" : 0,
+        "totalHits" : 0
+      }
+    } ],
+    "scanningStatistics" : [ {
+      "providerName" : "Library Gradle: com.jetbrains:ideaIC:2021.1.3",
+      "numberOfScannedFiles" : 80155,
+      "numberOfSkippedFiles" : 186,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 1316778000,
+      "timeProcessingUpToDateFiles" : 281360300,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Library Gradle: com.jetbrains:ideaIC:2021.1.3",
+      "numberOfScannedFiles" : 79579,
+      "numberOfSkippedFiles" : 31,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 1308529000,
+      "timeProcessingUpToDateFiles" : 344084900,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "JDK jbr-11",
+      "numberOfScannedFiles" : 51632,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 1057519100,
+      "timeProcessingUpToDateFiles" : 291043000,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+      "numberOfScannedFiles" : 3499,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 3499,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 627187300,
+      "timeProcessingUpToDateFiles" : 68460600,
+      "timeUpdatingContentLessIndexes" : 267590600,
+      "timeIndexingWithoutContent" : 10900800
+    }, {
+      "providerName" : "Module 'CodeElementPredict'",
+      "numberOfScannedFiles" : 20,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 5,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 41476000,
+      "timeProcessingUpToDateFiles" : 143900,
+      "timeUpdatingContentLessIndexes" : 17030200,
+      "timeIndexingWithoutContent" : 151100
+    }, {
+      "providerName" : "Library Gradle: org.junit.jupiter:junit-jupiter-api:5.7.0",
+      "numberOfScannedFiles" : 292,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 12337200,
+      "timeProcessingUpToDateFiles" : 7974100,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Library Gradle: org.junit.platform:junit-platform-engine:1.7.0",
+      "numberOfScannedFiles" : 225,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 5383500,
+      "timeProcessingUpToDateFiles" : 3177400,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Library Gradle: org.junit.jupiter:junit-jupiter-engine:5.7.0",
+      "numberOfScannedFiles" : 211,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 4870600,
+      "timeProcessingUpToDateFiles" : 2865200,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@1e1d2974",
+      "numberOfScannedFiles" : 221,
+      "numberOfSkippedFiles" : 4,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 2345900,
+      "timeProcessingUpToDateFiles" : 829400,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Library Gradle: org.jetbrains:annotations:21.0.0",
+      "numberOfScannedFiles" : 82,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 1687700,
+      "timeProcessingUpToDateFiles" : 1068900,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Library Gradle: org.junit.platform:junit-platform-commons:1.7.0",
+      "numberOfScannedFiles" : 91,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 1454800,
+      "timeProcessingUpToDateFiles" : 478500,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Module 'CodeElementPredict.main'",
+      "numberOfScannedFiles" : 4,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 4,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 963500,
+      "timeProcessingUpToDateFiles" : 82800,
+      "timeUpdatingContentLessIndexes" : 31800,
+      "timeIndexingWithoutContent" : 92900
+    }, {
+      "providerName" : "Library Gradle: org.opentest4j:opentest4j:1.2.0",
+      "numberOfScannedFiles" : 16,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 237800,
+      "timeProcessingUpToDateFiles" : 86800,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Library Gradle: org.apiguardian:apiguardian-api:1.1.0",
+      "numberOfScannedFiles" : 6,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 135800,
+      "timeProcessingUpToDateFiles" : 31000,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "com.intellij.ide.scratch.ScratchesAndConsolesIndexSetContributor@2291aa8f",
+      "numberOfScannedFiles" : 1,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 16300,
+      "timeProcessingUpToDateFiles" : 7900,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "Module 'CodeElementPredict.test'",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "com.intellij.ide.scratch.ScratchesAndConsolesIndexSetContributor@2291aa8f",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "com.intellij.javaee.ExternalResourcesRootsProvider@1e1d2974",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    }, {
+      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+      "numberOfScannedFiles" : 0,
+      "numberOfSkippedFiles" : 0,
+      "numberOfFilesForIndexing" : 0,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "scanningTime" : 0,
+      "timeProcessingUpToDateFiles" : 0,
+      "timeUpdatingContentLessIndexes" : 0,
+      "timeIndexingWithoutContent" : 0
+    } ],
+    "fileProviderStatistics" : [ {
+      "providerName" : "org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptDependenciesIndexableSetContributor@3f1eef48",
+      "totalNumberOfIndexedFiles" : 3499,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 1,
+      "totalIndexingTime" : 3380364071,
+      "contentLoadingTime" : 335009351,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ]
+    }, {
+      "providerName" : "Module 'CodeElementPredict.main'",
+      "totalNumberOfIndexedFiles" : 4,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : 81460708,
+      "contentLoadingTime" : 1885622,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ]
+    }, {
+      "providerName" : "Module 'CodeElementPredict'",
+      "totalNumberOfIndexedFiles" : 5,
+      "totalNumberOfFilesFullyIndexedByExtensions" : 0,
+      "totalIndexingTime" : 24834520,
+      "contentLoadingTime" : 1562311,
+      "numberOfTooLargeForIndexingFiles" : 0,
+      "slowIndexedFiles" : [ ]
+    } ]
+  }
+}

@@ -1,0 +1,85 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Undo">
+      <i c="2" l="1626999958414" />
+    </e>
+    <e n="ActivateStructureToolWindow">
+      <i c="2" l="1627364962904" />
+    </e>
+    <e n="CompileDirty">
+      <i c="1" l="1626224248123" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="13" l="1626859662178" />
+    </e>
+    <e n="EditorCopy">
+      <i c="17" l="1626859776666" />
+    </e>
+    <e n="EditorLineEndWithSelection">
+      <i c="1" l="1626247280255" />
+    </e>
+    <e n="EditorLineStart">
+      <i c="4" l="1626865848369" />
+    </e>
+    <e n="EditorPaste">
+      <i c="19" l="1626859780168" />
+    </e>
+    <e n="EditorTextEnd">
+      <i c="1" l="1626247266293" />
+    </e>
+    <e n="EditorTextStart">
+      <i c="2" l="1626247265822" />
+    </e>
+    <e n="GotoAction">
+      <i c="5" l="1631611648384" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="2" l="1626504381175" />
+    </e>
+    <e n="HelpTopics">
+      <i c="1" l="1631755962890" />
+    </e>
+    <e n="MaximizeToolWindow">
+      <i c="1" l="1630309338886" />
+    </e>
+    <e n="OnlineDocAction">
+      <i c="17" l="1631757619752" />
+    </e>
+    <e n="OpenFile">
+      <i c="5" l="1626834111028" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="5" l="1631757618202" />
+    </e>
+    <e n="ShowUsages">
+      <i c="1" l="1626504386729" />
+    </e>
+    <e n="UiInspector">
+      <i c="1" l="1628814613501" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1626182091897" />
+    </e>
+    <e n="com.intellij.diagnostic.IdeMessagePanel$4">
+      <i c="9" l="1630051158206" />
+    </e>
+    <e n="com.intellij.ide.structureView.newStructureView.TreeActionWrapper">
+      <i c="101" l="1629941104838" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="50" l="1630046536581" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+      <i c="46" l="1631513424655" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$ShowOptionsAction">
+      <i c="9" l="1631612163349" />
+    </e>
+    <e n="com.intellij.ui.AutoScrollFromSourceHandler$AutoScrollFromSourceAction">
+      <i c="11" l="1628589458817" />
+    </e>
+    <e n="com.intellij.ui.AutoScrollToSourceHandler$AutoscrollToSourceAction">
+      <i c="3" l="1628589458417" />
+    </e>
+  </component>
+</application>
