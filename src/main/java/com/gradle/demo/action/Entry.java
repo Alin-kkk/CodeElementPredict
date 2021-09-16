@@ -16,7 +16,7 @@ public class Entry extends DumbAwareAction {
         toolWindow.hide();
         ToolWindowManager.getInstance(project).registerToolWindow(new RegisterToolWindowTask("testwindow", ToolWindowAnchor.LEFT,null,true,false,true,true,null, AllIcons.Toolwindows.ToolWindowStructure,null));
         ToolWindow testToolWindow = windowManager.getToolWindow("testwindow");
-        new com.gradle.demo.StructureViewWrapperImpl(project, testToolWindow);
+        new NowFileStructure(project, testToolWindow);
         testToolWindow.show();
     }
 }
