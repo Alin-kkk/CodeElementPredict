@@ -52,6 +52,7 @@ public final class StructureViewWrapperImpl{
     private JPanel[] myPanels = new JPanel[0];
     private boolean myFirstRun = true;
     private int myActivityCount;
+    private int nowId;
     public StructureViewWrapperImpl(@NotNull Project project, @NotNull ToolWindow toolWindow) {
         ToolWindowManager.getInstance(project).registerToolWindow(new RegisterToolWindowTask("InterestCodeElement", ToolWindowAnchor.RIGHT,null,true,false,true,true,null, AllIcons.Toolwindows.ToolWindowStructure,null));
         ToolWindowManager windowManager = ToolWindowManager.getInstance(project);
@@ -136,10 +137,6 @@ public final class StructureViewWrapperImpl{
                                 for(int i=0;i<path.length;i++){
                                     newpath.add(path[i]);
                                 }
-//                                Iterator it1 = allPaths.iterator();
-//                                while(it1.hasNext()){
-//                                    System.out.println(it1.next());
-//                                }
                                 buildTree();
                             }
                         }
@@ -171,32 +168,9 @@ public final class StructureViewWrapperImpl{
     }
 
     private void buildTree(){
-        int i;
-        DefaultMutableTreeNode nowNode = root;
-        ArrayList newpath = this.newpath;
-        boolean t = true;
-        DefaultMutableTreeNode insertNode = root;
-        for(i=0;i<newpath.size();i++){
-            if(!t){break;}
-            Object now = newpath.get(i);
-            if(nowNode.getChildCount()==0){break;}
-            TreeNode nowChild = nowNode.getFirstChild();
-
-            while(nowNode.getChildAfter(nowChild)!=null&&nowChild.toString()!=now.toString()){
-                nowChild = nowNode.getChildAfter(nowChild);
-            }
-
-            if(nowChild.toString()!=now.toString()){
-                t=false;
-                insertNode = (DefaultMutableTreeNode) nowChild.getParent();
-                break;
-            }
-            else{
-                nowNode=(DefaultMutableTreeNode) nowChild;
-            }
-        }
-        for(;i<newpath.size();i++){
-            DefaultMutableTreeNode newNode = new DefaultMutableTreeNode(newpath.get(i).toString());
+        DefaultMutableTreeNode insertNode = selectInsertNode();
+        for(;nowId<newpath.size();nowId++){
+            DefaultMutableTreeNode newNode = new DefaultMutableTreeNode(newpath.get(nowId).toString());
             insertNode.add(newNode);
             insertNode = newNode;
         };
@@ -206,5 +180,31 @@ public final class StructureViewWrapperImpl{
         ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
         Content content = contentFactory.createContent(myInterest.getContent(), "", false);
         showToolWindow.getContentManager().addContent(content);
+    }
+    private DefaultMutableTreeNode selectInsertNode(){
+        DefaultMutableTreeNode nowNode = root;
+        DefaultMutableTreeNode insertNode = root;
+        boolean t = true;
+        for( nowId = 0; nowId < newpath.size(); nowId++){
+            if(!t){break;}
+            Object now = newpath.get(nowId);
+            if(nowNode.getChildCount() == 0){
+                insertNode = nowNode;
+                break;
+            }
+            TreeNode nowChild = nowNode.getFirstChild();
+            while(nowNode.getChildAfter(nowChild) != null && nowChild.toString() != now.toString()){
+                nowChild = nowNode.getChildAfter(nowChild);
+            }
+            if(nowChild.toString() != now.toString()){
+                t = false;
+                insertNode = (DefaultMutableTreeNode) nowChild.getParent();
+                break;
+            }
+            else{
+                nowNode=(DefaultMutableTreeNode) nowChild;
+            }
+        }
+        return insertNode;
     }
 }
