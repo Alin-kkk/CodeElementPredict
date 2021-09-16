@@ -122,7 +122,6 @@ public final class StructureViewWrapperImpl{
                 if (structureViewBuilder != null) {
                     myStructureView = structureViewBuilder.createStructureView(editor, myProject);
                     JTree tree = ((StructureViewComponent)myStructureView).getTree();
-                    System.out.println(tree.getModel().getRoot().toString());
                     tree.addMouseListener(new MouseAdapter() {
                         @Override
                         public void mouseClicked(MouseEvent e) {
@@ -153,16 +152,16 @@ public final class StructureViewWrapperImpl{
 
     private void createSinglePanel(final JComponent component) {
         myPanels = new JPanel[1];
-        myPanels[0] = createContentPanel(component);
+        myPanels[0] = createPanel(component);
     }
-    private com.gradle.demo.StructureViewWrapperImpl.ContentPanel createContentPanel(JComponent component) {
-        final com.gradle.demo.StructureViewWrapperImpl.ContentPanel panel = new com.gradle.demo.StructureViewWrapperImpl.ContentPanel();
+    private MyPanel createPanel(JComponent component) {
+        final MyPanel panel = new MyPanel();
         panel.setBackground(UIUtil.getTreeBackground());
         panel.add(component, BorderLayout.CENTER);
         return panel;
     }
-    private class ContentPanel extends JPanel{
-        ContentPanel() {
+    private class MyPanel extends JPanel{
+        MyPanel() {
             super(new BorderLayout());
         }
     }
