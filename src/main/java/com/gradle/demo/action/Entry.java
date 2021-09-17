@@ -1,5 +1,6 @@
 package com.gradle.demo.action;
 
+import com.gradle.demo.NowFileStructure;
 import com.intellij.icons.AllIcons;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
@@ -12,12 +13,12 @@ public class Entry extends DumbAwareAction {
     public void actionPerformed(AnActionEvent e) {
         Project project = e.getData(PlatformDataKeys.PROJECT);
         ToolWindowManager windowManager = ToolWindowManager.getInstance(project);
-        ToolWindow toolWindow = windowManager.getToolWindow(ToolWindowId.STRUCTURE_VIEW);
-        toolWindow.hide();
-        ToolWindowManager.getInstance(project).registerToolWindow(new RegisterToolWindowTask("testwindow", ToolWindowAnchor.LEFT,null,true,false,true,true,null, AllIcons.Toolwindows.ToolWindowStructure,null));
-        ToolWindow testToolWindow = windowManager.getToolWindow("testwindow");
-        new NowFileStructure(project, testToolWindow);
-        testToolWindow.show();
+
+        ToolWindowManager.getInstance(project).registerToolWindow(new RegisterToolWindowTask("nowFileWindow", ToolWindowAnchor.LEFT,null,true,false,true,true,null, AllIcons.Toolwindows.ToolWindowStructure,null));
+        ToolWindow nowFileView = windowManager.getToolWindow("nowFileWindow");
+
+        new NowFileStructure(project, nowFileView);
+        nowFileView.show();
     }
 }
 
