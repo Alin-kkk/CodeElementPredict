@@ -27,7 +27,6 @@ import com.intellij.ui.content.ContentFactory;
 import com.intellij.ui.content.ContentManager;
 import com.intellij.util.ui.TimerUtil;
 import com.intellij.util.ui.UIUtil;
-import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -42,59 +41,52 @@ public class NowFileStructure {
     DefaultMutableTreeNode root = new DefaultMutableTreeNode("Interest Code Elements");
     ArrayList allPaths = new ArrayList<String>();
     ArrayList newpath = new ArrayList<String>();
-    private static final int REFRESH_TIME = 100; // time to check if a context file selection is changed or not
-    private final Project myProject;
-    private final ToolWindow myToolWindow;
+    private Project project;
+    private ToolWindow toolWindow;
     private ToolWindow showToolWindow;
     private VirtualFile myFile;
-    private StructureView myStructureView;
-    private JPanel[] myPanels = new JPanel[0];
-    private boolean myFirstRun = true;
-    private int myActivityCount;
+    private StructureView structureView;
+    private boolean firstRefresh = true;
+    private int count;
     private int nowId;
-    public NowFileStructure(@NotNull Project project, @NotNull ToolWindow toolWindow) {
+    public NowFileStructure(Project project,ToolWindow toolWindow) {
         ToolWindowManager.getInstance(project).registerToolWindow(new RegisterToolWindowTask("InterestCodeElement", ToolWindowAnchor.RIGHT,null,true,false,true,true,null, AllIcons.Toolwindows.ToolWindowStructure,null));
         ToolWindowManager windowManager = ToolWindowManager.getInstance(project);
         showToolWindow = windowManager.getToolWindow("InterestCodeElement");
         showToolWindow.show();
-        myProject = project;
-        myToolWindow = toolWindow;
-        Timer timer = TimerUtil.createNamedTimer("StructureView", REFRESH_TIME, event -> {
+        this.project = project;
+        this.toolWindow = toolWindow;
+        Timer timer = TimerUtil.createNamedTimer("nowFileStructure", 100, event -> {
             int count = ActivityTracker.getInstance().getCount();
-            if (count == myActivityCount) {
+            if (count == this.count) {
                 return;
             }
-            checkUpdate();
-            myActivityCount = count;
+            refresh();
+            this.count = count;
         });
         timer.start();
     }
-    private void checkUpdate() {
-        final Component owner = KeyboardFocusManager.getCurrentKeyboardFocusManager().getFocusOwner();
-        final boolean insideToolwindow = SwingUtilities.isDescendingFrom(myToolWindow.getComponent(), owner);
-        if (!myFirstRun) {
-            if(insideToolwindow){return;}
-            if(JBPopupFactory.getInstance().isPopupActive()){return;}
-        }
-        final DataContext dataContext = DataManager.getInstance().getDataContext(owner);
-        if (CommonDataKeys.PROJECT.getData(dataContext) != myProject) {
+    private void refresh() {
+        Component owner = KeyboardFocusManager.getCurrentKeyboardFocusManager().getFocusOwner();
+        boolean ifContact = SwingUtilities.isDescendingFrom(toolWindow.getComponent(), owner);
+        DataContext dataContext = DataManager.getInstance().getDataContext(owner);
+        if (CommonDataKeys.PROJECT.getData(dataContext) != project || (!firstRefresh && (ifContact || JBPopupFactory.getInstance().isPopupActive()))){
             return;
         }
-        VirtualFile[] files = insideToolwindow ? null : CommonDataKeys.VIRTUAL_FILE_ARRAY.getData(dataContext);
-
+        VirtualFile[] files = ifContact ? null : CommonDataKeys.VIRTUAL_FILE_ARRAY.getData(dataContext);
         if (files != null && files.length == 1) {
-            setFile(files[0]);
+            newFile(files[0]);
         }
-        else if (myFirstRun) {
-            FileEditorManagerImpl editorManager = (FileEditorManagerImpl) FileEditorManager.getInstance(myProject);
+        else if (firstRefresh) {
+            FileEditorManagerImpl editorManager = (FileEditorManagerImpl) FileEditorManager.getInstance(project);
             java.util.List<Pair<VirtualFile, EditorWindow>> history = editorManager.getSelectionHistory();
             if (!history.isEmpty()) {
-                setFile(history.get(0).getFirst());
+                newFile(history.get(0).getFirst());
             }
         }
-        myFirstRun = false;
+        firstRefresh = false;
     }
-    private void setFile(VirtualFile file) {
+    private void newFile(VirtualFile file) {
         if (!Comparing.equal(file, myFile)) {
             myFile = file;
             rebuild();
@@ -102,61 +94,60 @@ public class NowFileStructure {
     }
 
     public void rebuild() {
-        final ContentManager contentManager = myToolWindow.getContentManager();
+        ContentManager contentManager = toolWindow.getContentManager();
         contentManager.removeAllContents(true);
         VirtualFile file = myFile;
         if (file == null) {
-            final VirtualFile[] selectedFiles = FileEditorManager.getInstance(myProject).getSelectedFiles();
+            VirtualFile[] selectedFiles = FileEditorManager.getInstance(project).getSelectedFiles();
             if (selectedFiles.length > 0) {
                 file = selectedFiles[0];
             }
         }
+
         String[] names = {""};
-        if (file != null && file.isValid()) {
-            if (file.isDirectory()) {
-            }
-            else {
-                FileEditor editor = FileEditorManager.getInstance(myProject).getSelectedEditor(file);
-                StructureViewBuilder structureViewBuilder = editor.getStructureViewBuilder();
-                if (structureViewBuilder != null) {
-                    myStructureView = structureViewBuilder.createStructureView(editor, myProject);
-                    JTree tree = ((StructureViewComponent)myStructureView).getTree();
-                    tree.addMouseListener(new MouseAdapter() {
-                        @Override
-                        public void mouseClicked(MouseEvent e) {
-                            super.mouseClicked(e);
-                            TreePath selectionPath = tree.getSelectionPath();
-                            newpath.clear();
-                            if(!allPaths.contains(selectionPath.toString())){
-                                allPaths.add(selectionPath.toString());
-                                Object[] path = selectionPath.getPath();
-                                for(int i=0;i<path.length;i++){
-                                    newpath.add(path[i]);
-                                }
-                                buildTree();
-                            }
-                        }
-                    });
-                    createSinglePanel(myStructureView.getComponent());
-                }
-            }
+        FileEditor editor = FileEditorManager.getInstance(project).getSelectedEditor(file);
+        if (file.isDirectory() || editor == null || !editor.isValid()) {
+            return;
         }
-        for (int i = 0; i < myPanels.length; i++) {
-            final Content content = ContentFactory.SERVICE.getInstance().createContent(myPanels[i], names[i], false);
-            contentManager.addContent(content);
+        if (file != null && file.isValid()) {
+            StructureViewBuilder structureViewBuilder = editor.getStructureViewBuilder();
+            if (structureViewBuilder != null) {
+                structureView = structureViewBuilder.createStructureView(editor, project);
+                treeListener();
+                createPanel(structureView.getComponent());
+            }
         }
     }
 
-    private void createSinglePanel(final JComponent component) {
-        myPanels = new JPanel[1];
-        myPanels[0] = createPanel(component);
+    private void treeListener() {
+        JTree tree = ((StructureViewComponent) structureView).getTree();
+        tree.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                TreePath selectionPath = tree.getSelectionPath();
+                newpath.clear();
+                if(!allPaths.contains(selectionPath.toString())){
+                    allPaths.add(selectionPath.toString());
+                    Object[] path = selectionPath.getPath();
+                    for(int i=0;i<path.length;i++){
+                        newpath.add(path[i]);
+                    }
+                    buildTree();
+                }
+            }
+        });
     }
-    private MyPanel createPanel(JComponent component) {
-        final MyPanel panel = new MyPanel();
-        panel.setBackground(UIUtil.getTreeBackground());
-        panel.add(component, BorderLayout.CENTER);
-        return panel;
-    }
+
+private void createPanel(Component component){
+    MyPanel myPanel = new MyPanel();
+    myPanel.setBackground(UIUtil.getTreeBackground());
+    myPanel.add(component, BorderLayout.CENTER);
+    Content content = ContentFactory.SERVICE.getInstance().createContent(myPanel, "", false);
+    ContentManager contentManager = toolWindow.getContentManager();
+    contentManager.removeAllContents(true);
+    contentManager.addContent(content);
+}
     private class MyPanel extends JPanel{
         MyPanel() {
             super(new BorderLayout());
